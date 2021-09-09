@@ -48,7 +48,8 @@ public class TRTCManager {
                 encParam.videoResolution = options.getInt("videoResolution");
             }
             if (options.hasKey("videoResolutionMode")) {
-                encParam.videoResolutionMode = options.getInt("videoResolutionMode");
+                // encParam.videoResolutionMode = options.getInt("videoResolutionMode");
+                encParam.videoResolutionMode = TRTCCloudDef.TRTC_VIDEO_RESOLUTION_MODE_PORTRAIT;
             }
             if (options.hasKey("videoFps")) {
                 encParam.videoFps = options.getInt("videoFps");
